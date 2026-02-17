@@ -27,7 +27,7 @@ DEFAULT_DOCUMENTATION_HTML = """
 
   <div class="note">
     <b>API key:</b> Set your key in <b>Settings</b> before using geocoding, routing, optimization, or basemaps.
-    Use your existing Regio API key or contact <b>regio@regio.ee</b> to get one.
+    Use your existing Regio API key or contact <b>geospatial@regio.ee</b> to get one.
     <br><b>Coordinates:</b> Regio API uses WGS84 <code>[lng, lat]</code>. The plugin transforms to/from the project CRS automatically.
   </div>
 

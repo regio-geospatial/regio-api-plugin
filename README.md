@@ -8,7 +8,7 @@ A QGIS plugin that integrates **Regio API** services into a dockable panel:
 - Optional route optimization
 - Basemap (Regio WMS) add-to-project
 
-Use your existing Regio API key or contact regio@regio.ee
+Use your existing Regio API key or contact geospatial@regio.ee
 
 ---
 
@@ -157,6 +157,6 @@ This program is licensed under terms of GNU GPL v.2 or any later version.
 
 Need to fix a bug or add a feature to Regio API Plugin?
 
-Contact regio@regio.ee
+Contact geospatial@regio.ee
 
 We provide custom development and support for this software.

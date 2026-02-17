@@ -1,10 +1,10 @@
 [general]
 name=Regio API Plugin
 description=Estonian, Latvian and Lithuanian geocode, reverse geocode, routing and WMS basemap via Regio API (api.regio.ee)
-version=1.0.0
+version=1.0.1
 qgisMinimumVersion=3.40
 author=Regio OÜ
-email=regio@regio.ee
+email=geospatial@regio.ee
 category=Web
 icon=icon.png
 supportsQt6=True
