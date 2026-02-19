@@ -88,6 +88,13 @@ class SettingsDialog(QDialog):
         layout.addWidget(QLabel(tr("API key")))
         layout.addWidget(self.api_key)
 
+        self.api_key_hint = QLabel(tr("Contact geospatial@regio.ee for new API key."))
+        self.api_key_hint.setWordWrap(True)
+        layout.addWidget(self.api_key_hint)
+
+        self.api_key.textChanged.connect(self._update_api_key_hint)
+        self._update_api_key_hint(self.api_key.text())
+
         layout.addWidget(QLabel(tr("Countries")))
         layout.addWidget(countries_row)
 
@@ -149,6 +156,9 @@ class SettingsDialog(QDialog):
             self._on_applied()
 
         self.accept()
+
+    def _update_api_key_hint(self, text: str) -> None:
+        self.api_key_hint.setVisible(not text.strip())
 
     def _test_key(self) -> None:
         key = self.api_key.text().strip()

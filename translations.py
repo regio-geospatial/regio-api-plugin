@@ -41,6 +41,7 @@ _TRANSLATIONS = {
         ("RegioApiPlugin", "API key is empty."): "API võti on tühi.",
         ("RegioApiPlugin", "API key not set. Open Settings."): "API võti pole määratud. Ava seaded.",
         ("RegioApiPlugin", "Select at least one country."): "Vali vähemalt üks riik.",
+        ("RegioApiPlugin", "Contact geospatial@regio.ee for new API key."): "Võta ühendust geospatial@regio.ee, et saada uus API võti.",
 
         ("RegioApiPlugin", "Waypoints"): "Teekonnapunktid",
         ("RegioApiPlugin", "Stop"): "Peatus",
@@ -122,6 +123,7 @@ _TRANSLATIONS = {
         ("RegioApiPlugin", "API key is empty."): "API atslēga ir tukša.",
         ("RegioApiPlugin", "API key not set. Open Settings."): "API atslēga nav iestatīta. Atveriet iestatījumus.",
         ("RegioApiPlugin", "Select at least one country."): "Izvēlieties vismaz vienu valsti.",
+        ("RegioApiPlugin", "Contact geospatial@regio.ee for new API key."): "Sazinieties ar geospatial@regio.ee, lai iegūtu jaunu API atslēgu.",
 
         ("RegioApiPlugin", "Waypoints"): "Maršruta punkti",
         ("RegioApiPlugin", "Stop"): "Pietura",
@@ -203,6 +205,7 @@ _TRANSLATIONS = {
         ("RegioApiPlugin", "API key is empty."): "API raktas tuščias.",
         ("RegioApiPlugin", "API key not set. Open Settings."): "API raktas nenustatytas. Atidarykite nustatymus.",
         ("RegioApiPlugin", "Select at least one country."): "Pasirinkite bent vieną šalį.",
+        ("RegioApiPlugin", "Contact geospatial@regio.ee for new API key."): "Susisiekite su geospatial@regio.ee, kad gautumėte naują API raktą.",
 
         ("RegioApiPlugin", "Waypoints"): "Maršruto taškai",
         ("RegioApiPlugin", "Stop"): "Stotelė",
