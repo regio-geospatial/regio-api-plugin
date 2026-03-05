@@ -3,6 +3,7 @@ import json
 from typing import Callable, Optional, Any, Dict
 
 from qgis.PyQt.QtCore import QObject, QUrl, QUrlQuery, QTimer
+from qgis.PyQt.QtWidgets import QMessageBox
 from qgis.PyQt.QtNetwork import QNetworkRequest, QNetworkReply
 from qgis.core import QgsNetworkAccessManager
 
@@ -70,6 +71,16 @@ class ApiClient(QObject):
 
             if reply.error() != QNetworkReply.NetworkError.NoError:
                 err = reply.errorString()
+                if "Too Many Requests" in err:
+                    QMessageBox.warning(
+                        None,
+                        "Regio API Plugin",
+                        "You have reached the free trial request limit.\n\n"
+                        "To continue using the plugin, please contact:\n"
+                        "geospatial@regio.ee"
+                    )
+                    reply.deleteLater()
+                    return
                 self._log.error(f"Network error ({rid}): {err} | {safe_url_str}")
                 reply.deleteLater()
                 on_done(rid, False, None, err)

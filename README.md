@@ -8,7 +8,7 @@ A QGIS plugin that integrates **Regio API** services into a dockable panel:
 - Optional route optimization
 - Basemap (Regio WMS) add-to-project
 
-Use your existing Regio API key or contact geospatial@regio.ee
+**Free trial included** — the plugin works out of the box with a built-in trial API key (300 requests). Contact geospatial@regio.ee for a full API key.
 
 ---
 
@@ -114,8 +114,8 @@ A dock widget contains collapsible sections:
 ## How to Use
 
 1. Open the **Regio API Plugin** panel (dock widget).
-2. Click the **Settings** (gear) button:
-   - Paste your API key
+2. Start using the plugin immediately — a free trial key is included (300 requests/month).
+3. For higher limits, click the **Settings** (gear) button and paste your own API key.
    - Choose default country/countries and language
 
 3. **Search:**

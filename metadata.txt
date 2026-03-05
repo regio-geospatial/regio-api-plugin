@@ -1,14 +1,14 @@
 [general]
 name=Regio API Plugin
-description=Estonian, Latvian and Lithuanian geocode, reverse geocode, routing and WMS basemap via Regio API (api.regio.ee)
-version=1.0.3
+description=Estonian, Latvian and Lithuanian geocode, reverse geocode, routing and WMS basemap via Regio API (api.regio.ee). Includes a free trial (300 requests).
+version=1.0.4
 qgisMinimumVersion=3.40
 author=Regio OÜ
 email=geospatial@regio.ee
 category=Web
 icon=icon.png
 supportsQt6=True
-about=Provides address search with autocomplete, reverse geocode map-click tool, routing, and Regio Baltic WMS basemap. Uses customer API key. Contact geospatial@regio.ee for new API key.
+about=Provides address search with autocomplete, reverse geocode map-click tool, routing, and Regio Baltic WMS basemap. Works out of the box with a built-in free trial key (300 requests). Contact geospatial@regio.ee for a full API key.
 
 tracker=https://github.com/regio-geospatial/regio-api-plugin/issues
 repository=https://github.com/regio-geospatial/regio-api-plugin
@@ -16,6 +16,7 @@ repository=https://github.com/regio-geospatial/regio-api-plugin
 changelog=
     1.0.2 - Initial release
     1.0.3 - Updated contact email for new API key
+    1.0.4 - Added built-in free trial API key
 
 tags=geocode, revgeocode, routing, basemap, regio, api, baltic, estonia, latvia, lithuania
 

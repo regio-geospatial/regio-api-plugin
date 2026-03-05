@@ -26,8 +26,9 @@ DEFAULT_DOCUMENTATION_HTML = """
   <h2>Regio API Plugin — Quick Guide</h2>
 
   <div class="note">
-    <b>API key:</b> Set your key in <b>Settings</b> before using geocoding, routing, optimization, or basemaps.
-    Use your existing Regio API key or contact <b>geospatial@regio.ee</b> to get one.
+    <b>Free trial:</b> The plugin works out of the box with a built-in trial key (<b>300 requests</b>).
+    When the limit is reached, a message will appear with contact details.
+    <br><b>Own API key:</b> For higher limits, set your key in <b>Settings</b>. Contact <b>geospatial@regio.ee</b> to get one.
     <br><b>Coordinates:</b> Regio API uses WGS84 <code>[lng, lat]</code>. The plugin transforms to/from the project CRS automatically.
   </div>
 

@@ -11,6 +11,7 @@ KEY_DEBUG_LOGGING = f"{PLUGIN_NS}/debug_logging"
 DEFAULT_COUNTRIES = ["EE", "LV", "LT"]
 DEFAULT_LANGUAGE = "en"
 DEFAULT_DEBUG_LOGGING = False
+TRIAL_API_KEY = "CYTJuc0RYD9aOLwdMX73WhEWLbbGPrTN"
 
 _ALLOWED = {"EE", "LV", "LT"}
 
@@ -20,7 +21,7 @@ class PluginSettings:
         self._s = QgsSettings()
 
     def api_key(self) -> str:
-        return self._s.value(KEY_API_KEY, "", type=str)
+        return self._s.value(KEY_API_KEY, "", type=str) or TRIAL_API_KEY
 
     def set_api_key(self, key: str) -> None:
         self._s.setValue(KEY_API_KEY, (key or "").strip())

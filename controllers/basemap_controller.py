@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 from typing import Optional, Set
 
 from qgis.PyQt.QtCore import QObject, QUrl, QUrlQuery, QTimer, QCoreApplication
+from qgis.PyQt.QtWidgets import QMessageBox
 from qgis.PyQt.QtNetwork import QNetworkRequest, QNetworkReply
 from qgis.core import (
     QgsProject,
@@ -106,6 +107,15 @@ class BasemapController(QObject):
         if reply.error() != QNetworkReply.NetworkError.NoError:
             err = reply.errorString()
             reply.deleteLater()
+            if "Too Many Requests" in err:
+                QMessageBox.warning(
+                    None,
+                    "Regio API Plugin",
+                    "You have reached the free trial request limit.\n\n"
+                    "To continue using the plugin, please contact:\n"
+                    "geospatial@regio.ee"
+                )
+                return
             self._iface.messageBar().pushCritical("Regio API Plugin", f"WMS GetCapabilities failed: {err}")
             return
 
