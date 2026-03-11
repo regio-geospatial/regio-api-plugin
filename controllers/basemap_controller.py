@@ -106,8 +106,9 @@ class BasemapController(QObject):
 
         if reply.error() != QNetworkReply.NetworkError.NoError:
             err = reply.errorString()
+            status = reply.attribute(QNetworkRequest.Attribute.HttpStatusCodeAttribute)
             reply.deleteLater()
-            if "Too Many Requests" in err:
+            if status == 429 or "Too Many Requests" in err:
                 QMessageBox.warning(
                     None,
                     "Regio API Plugin",

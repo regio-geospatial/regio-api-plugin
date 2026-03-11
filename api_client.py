@@ -71,7 +71,8 @@ class ApiClient(QObject):
 
             if reply.error() != QNetworkReply.NetworkError.NoError:
                 err = reply.errorString()
-                if "Too Many Requests" in err:
+                status = reply.attribute(QNetworkRequest.Attribute.HttpStatusCodeAttribute)
+                if status == 429 or "Too Many Requests" in err:
                     QMessageBox.warning(
                         None,
                         "Regio API Plugin",
